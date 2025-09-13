@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <title>Mandelbrot Set Explorer</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                font-family: monospace;
+            }
+
+            html,
+            body {
+                height: 100%;
+            }
+
+            body {
+                overflow: hidden;
+            }
+
+            canvas {
+                touch-action: none;
+            }
+
+            p {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                padding: 1rem;
+                color: rgba(255, 255, 255, .5);
+                font-size: .75rem;
+                text-transform: uppercase;
+            }
+        </style>
+    </head>
+
+    <body>
+        <canvas></canvas>
+
+        <p>Click and drag to select an area you want to zoom in.</p>
+
+        <script type="module" src="./src/App.ts"></script>
+    </body>
+</html>

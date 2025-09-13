@@ -1,0 +1,1 @@
+A small interactive Mandelbrot Set Explorer built for the browser. It uses a thread pool of web workers to parallelize heavy computations of the fractal.
